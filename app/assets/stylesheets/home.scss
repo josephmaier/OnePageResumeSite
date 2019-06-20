@@ -1,0 +1,507 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//NAVAGATION BAR
+#navBar {
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 100;
+}
+
+.navDiv {
+    display: inline;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.navBarElement {
+    display: inline;
+}
+
+.navImg {
+    width: 1%;
+    min-width: 15px;
+}
+
+#navBar p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    //font-size: 24px;
+    font-size: 1.5em;
+}
+
+#navBar a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#navBar a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#navBar a:hover {
+    color: black;
+    border-bottom: 2px solid rgb(35,186,78);
+}
+
+//INITAL IMAGE
+#hiImJoe {
+    display: inline;
+    height: 100%;
+    //z-index: 98;
+}
+
+.mainImg {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+
+#hiImJoe_Image {
+    filter: brightness(40%);
+    z-index: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hiImJoe_Text {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+    color: white;
+    //background: black;
+    z-index: 0;
+}
+
+.HiIm {
+    font-family: 'Courier New', Courier, monospace;
+    //font-size: 50px;
+    font-size: 3vw;
+    line-height: 55px;
+}
+
+.Joe {
+    font-family: 'Courier New', Courier, monospace;
+    //font-size: 90px;
+    font-size:5.4vw;
+    line-height: 100px;;
+    margin-top: -70px;
+}
+
+//ABOUT ME 
+#aboutMe {
+    //position: relative;
+    display: block;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 1
+}
+
+.headerImg {
+    width: 1.25%;
+    min-width: 20px;
+    display: inline;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sectionHeader h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+    display: inline;
+}
+
+.sectionHeader hr {
+    height: 1px;
+    color: rgb(35,186,78);
+    background-color: rgb(35,186,78);
+}
+
+#profImg {
+    
+    position: relative;
+    margin-top: -22.5%;
+}
+
+.gradPic {
+    width: 25%;
+    //z-index: 99;
+    margin-top: 20px;
+    vertical-align: top;  
+}
+
+#blurb {
+    position: relative;
+    width: 70%;
+    margin-left: 25%;
+    line-height: 24px;
+}
+
+.blurbParagraph {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#info {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+#info table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.aboutMeImg {
+    width: 5%;
+    min-width: 12px;
+    padding: 10px;
+    background-color: rgb(35,186,78);
+    display: inline;
+    z-index: 0;
+}
+
+.aboutMeInfo {
+    display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+//RESUME
+#resume {
+    display: block;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#educationSection {
+    //position: 
+    display: inline-block;
+    border: 3px solid rgb(35,186,78);
+    border-color: rgb(35,186,78);
+    border-radius: 10px;
+    width: 30%;
+    //height: 330px;
+    margin-top: 2%;
+    margin-left: 0.5%;
+    vertical-align: top;
+}
+
+.sectionTitleImg {
+    width: 10%;
+    min-width: 12px;
+    //display: inline;
+    margin-left: 40%;
+    margin-top:2%;
+    padding: 10px;
+    float:right;
+    //background-color: rgb(35,186,78);
+}
+
+.sectionTitle p {
+    //display: inline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+.sectionInfo li {
+    color: rgb(35,186,78);
+}
+
+.pointTitle {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    //line-height: 4px;
+}
+
+.pointInfo {
+    color: rgb(175,175,175);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 8px;
+}
+
+#courseworkSection {
+    //position: relative;
+    display: inline-block;
+    border: 3px solid rgb(35,186,78);
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 3%;
+    vertical-align: top;
+    //margin-top: -328px;
+    //left: 33%;
+}
+
+#courseworkSection .pointInfo {
+    line-height: 16px;
+}
+
+#skillsSection {
+    //position: relative;
+    display: inline-block;
+    border: 3px solid rgb(35,186,78);
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 3%;
+    vertical-align: top;
+    
+}
+
+#skillsSection .pointInfo {
+    line-height: 16px;
+}
+
+#achievementsSection {
+    display: inline-block;
+    border: 3px solid rgb(35,186,78);
+    border-radius: 10px;
+    width: 30%;
+    margin-top: -16%;
+    margin-left: 0.5%;
+    
+}
+
+#achievementsSection .pointInfo {
+    line-height: 16px;
+}
+
+//PROJECTS
+#projects {
+    display: block;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.projectImg {
+    width: 16vw;
+    height: 12vw;
+    filter: brightness(80%);
+}
+
+.projectImgLink:hover {
+    //border: 3px solid rgb(35,186,78);
+    filter: brightness(120%);
+    //border-radius: 10px;
+}
+
+.projectSubsection {
+    //border: 3px solid rgb(35,186,78);
+    //border-radius: 10px;
+}
+
+.projectSubsection table {
+    width: 100%;
+    text-align: center;
+}
+
+.projectSubsection p {
+    text-align: left;
+}
+
+.projectTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.projectSubsection li {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(35,186,78);
+}
+
+.projectSubsection li p {
+    color: rgb(175,175,175);
+}
+
+//WORK
+#work {
+    display: block;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.workSubsection {
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 3px solid rgb(35,186,78);
+    border-radius: 15px;
+    margin-top: 3%;
+}
+
+.workImg {
+    height: 15vw;
+    width: 24vw;
+    margin-right: 2%;
+}
+
+.workSubsection p {
+    text-align: left;
+    color:rgb(175,175,175);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.workSubsection b {
+    color: black;
+}
+
+//FOOTER
+#footer {
+    margin-top: 5%;
+}
+// #footer {
+//     display: block;
+//     background-color: black;
+//     margin-top: 5%;
+// }
+
+// #footer p {
+//     color: white;
+// }
+
+// .footerImg {
+//     width: 5%;
+//     min-width: 12px;
+//     padding: 10px;
+//     background-color: white;
+// }
+
+// .footerInfo {
+//     display: inline-block;
+// }
+
+
+
+
+//mobile devices
+@media only screen and (max-width: 1024px) {
+
+    .navDiv {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        
+    }
+
+    #navBar p {
+        font-size: 0.75em;
+    }
+
+    #hiImJoe_Text {
+        z-index: -2;
+    }
+
+    .sectionHeader h1 {
+        font-size: 1.25em;
+    }
+
+    .blurbParagraph {
+        font-size: 0.75em;
+    }
+
+    #profImg {
+        visibility: hidden;
+    }
+
+    #blurb {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .aboutMeInfo {
+        font-size: 0.75em;
+    }
+
+    .sectionTitle {
+        font-size: 1em;
+    }
+
+    .pointTitle {
+        font-size: 0.75em;
+    }
+
+    .pointInfo {
+        font-size: 0.75em;
+        line-height: 1em;
+    }
+
+    .projectTitle {
+        font-size: 1em;
+    }
+
+    .projectSubsection li {
+        font-size: 0.75em;
+    }
+
+    .workSubsection p {
+        font-size: 0.75em;
+    }
+}
+
+//fix resume section
+@media only screen and (max-width: 1500px) {
+    #educationSection {
+        display: block;
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+        vertical-align: top;
+
+    }
+
+    #courseworkSection {
+        display: block;
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+        vertical-align: top;
+    }
+
+    #skillsSection {
+        display: block;
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+        vertical-align: top;
+    }
+
+    #achievementsSection {
+        display: block;
+        width: 80%;
+        margin-top: 2%;
+        margin-left: 10%;
+        vertical-align: top;
+    }
+}

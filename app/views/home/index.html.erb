@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joe Maier</title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131279947-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-131279947-1');
+        </script>
+        <link rel="icon" href="/favicon-32x32.png">
+    </head>
+
+    <body>
+        <!--Navagation Bar-->
+        <div id="navBar">
+            <!--Link To About Me-->
+            <a href="#aboutMe"><div class="navDiv">
+                <%= image_tag("avatar.png", class: "navImg") %>
+                <p class="navBarElement">ABOUT ME</p>
+            </div></a>
+            <!--Link To Resume-->
+            <a href="#resume"><div class="navDiv">
+                <%= image_tag("list.png", class: "navImg") %>
+                <p class="navBarElement">RESUME</p>
+            </div></a>
+            <!--Link To Projects-->
+            <a href="#projects"><div class="navDiv">
+                <%= image_tag("settings.png", class: "navImg") %>
+                <p class="navBarElement">PROJECTS</p>
+            </div></a>
+            <!--Link To Work-->
+            <a href="#work"><div class="navDiv">
+                <%= image_tag("edit.png", class: "navImg") %>
+                <p class="navBarElement">WORK</p>
+            </div></a>
+        </div>
+        
+        <!--Initial Image-->
+        <div id="hiImJoe">
+            <!--Image-->
+            <div id="hiImJoe_Image">
+                <%= image_tag("Capstone_16by9.png", class: "mainImg") %>
+            </div>
+            <!--Text-->
+            <div id="hiImJoe_Text">
+                    <p class="HiIm">Hi I'm</p>
+                    <p class="Joe">-Joe-</p>
+            </div>
+        </div>
+
+        <!--About Me-->
+        <div id="aboutMe">
+            <!--Section Header-->
+            <div class="sectionHeader">
+                <%= image_tag("avatar.png", class: "headerImg") %>
+                <h1>ABOUT ME</h1>
+                <hr>
+            </div>
+            <!--About Me Blurb-->
+            <div id="blurb">
+                <p class="blurbParagraph">I am a recent graduate from York College of Pennsylvania with a <b>Bachelor of Science in Electrical Engineering</b>. During my time in school I accumulated 140 credits and <b>48 weeks of full-time engineering employment</b>. My courses demonstrate that I had an educational focus on <b>control and power engineering</b>, while also gathering embedded system experience. I've gained a reputation of being a <b>deep diving</b>, <b>mature</b>, and <b>hard-working</b> individual.</p>
+                <p class="blurbParagraph">Outside of my career, my hobbies include fly fishing, ultimate frisbee, and camping with my dog. I have continued to take my inherent <b>ability to learn</b>, <b>design</b>, and <b>manage</b> to all my hobbies. For fly fishing, I have studied fish and the creatures they feed on to design and create new lures specific to certain geographic area. For ultimate frisbee, I captained and managed our college's club team for three years. Lastly, for camping, I purchased a cargo van and developed it into a camper van to be able to better enjoy the outdoors with my dog.</p>
+            </div>
+            <!--Professional Image-->
+            <div id="profImg">
+                <%= image_tag("profPic_Grad.png", class: "gradPic") %>
+            </div>
+            
+            <!--Info-->
+            <div id="info">
+                <table>
+                    <tr>
+                        <td>
+                            <%= image_tag("avatar.png", class: "aboutMeImg") %>
+                            <p class="aboutMeInfo">NAME: Joe Maier</p>
+                        </td>
+                        <td>
+                            <%= image_tag("menu.png", class: "aboutMeImg") %>
+                            <p class="aboutMeInfo">AGE: 23</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= image_tag("placeholder.png", class: "aboutMeImg") %>
+                            <p class="aboutMeInfo">LOCATION: Southeastern, PA</p>
+                        </td>
+                        <td>
+                            <%= image_tag("edit.png", class: "aboutMeImg") %>
+                            <p class="aboutMeInfo">DEGREE: Electrical Engineering, BS</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= image_tag("envelope.png", class: "aboutMeImg") %>
+                            <p class="aboutMeInfo">EMAIL: joemaier2@gmail.com</p>
+                        </td>
+                        <td>
+                            <%= image_tag("telephone.png", class: "aboutMeImg") %>
+                            <p class="aboutMeInfo">PHONE: (267) 421-8499</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!--Resume-->
+        <div id="resume">
+            <!--Section Header-->
+            <div class="sectionHeader">
+                <%= image_tag("list.png", class: "headerImg") %>
+                <h1>RESUME</h1>
+                <hr>
+            </div>
+            <!--Education-->
+            <div id="educationSection">
+                <div class="sectionTitle">
+                    <%= image_tag("house.png", class: "sectionTitleImg") %>
+                    <p>Education</p>
+                </div>
+                <div class="sectionInfo">
+                    <ul>
+                        <li>
+                            <p class="pointTitle">North Penn High School</p>
+                            <p class="pointInfo">2010 - 2014</p>
+                            <p class="pointInfo">North Penn Engineering Academy</p>
+                            <p class="pointInfo">Project Lead the Way</p>
+                            <br/>
+                        </li>
+                        <li>
+                            <p class="pointTitle">York College of Pennsylvania</p>
+                            <p class="pointInfo">2014 - 2018</p>
+                            <p class="pointInfo">Electrical Engineering Major</p>
+                            <p class="pointInfo">Major GPA: 3.70</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Coursework-->
+            <div id="courseworkSection">
+                <div class="sectionTitle">
+                    <%= image_tag("edit (2).png", class: "sectionTitleImg") %>
+                    <p>Coursework</p>
+                </div>
+                <div class="sectionInfo">
+                    <ul>
+                        <li>
+                            <p class="pointTitle">Hardware Courses</p>
+                            <p class="pointInfo">Power Electronics, Microprocessors, Automatic Control, Radar Systems, Analog Circuits, Fundamentals of Computer Engineering, Digital Circuits, Engineering Projects and Design Studios</p>
+                        </li> 
+                        <li>
+                            <p class="pointTitle">Theoretical Courses</p>
+                            <p class="pointInfo">Applied Controls, Power Systems, Electromagnetic Fields, Random Signals, System Modeling and Analysis, Signal Processing, Physics II: Electricity & Magnetism, Physics I: Mechanics</p>
+                        </li>
+                        <li>
+                            <p class="pointTitle">Software Courses</p>
+                            <p class="pointInfo">Microprocessors, Fundamentals of Computer Engineering, Computer Science II, Computer Science I</p>
+                        </li>
+                        <li>
+                            <p class="pointTitle">Math Courses</p>
+                            <p class="pointInfo">Discrete Math, Math Methods, Differential Equations, Calculus II, Calculus I</p>
+                        </li>
+                        <li>
+                            <p class="pointTitle">General Engineering Courses</p>
+                            <p class="pointInfo">Engineering Career Training, Chemistry I</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Skills-->
+            <div id="skillsSection">
+                <div class="sectionTitle">
+                    <%= image_tag("chip.png", class: "sectionTitleImg") %>
+                    <p>Skills</p>
+                </div>
+                <div class="sectionInfo">
+                    <ul>
+                        <li>
+                            <p class="pointTitle">Hardware</p>
+                            <p class="pointInfo">Closed Loop Control Systems, AC & DC Power Transmision and Converters, Microcontroller, CAN-BUS, Network Analyzer, Phase Noise Test Equipment, FPGAs, Function Generators, Oscilloscopes, Multimeters, Scanning Electron Microscopes(SEM), Soldering</p>
+                        </li>
+                        <li>
+                            <p class="pointTitle">Software</p>
+                            <p class="pointInfo">C, C++, Java, MATLAB, R, Assembly, Verilog, HTML, CSS</p>
+                        </li>
+                        <li>
+                            <p class="pointTitle">Applications</p>
+                            <p class="pointInfo">Altium, EAGLE, Tableau, SolidWorks, Autodesk Inventor, AutoCAD, TINA, CircuitMaker, Quartus, Fritzing, Microsoft Office</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Achievements-->
+            <div id="achievementsSection">
+                <div class="sectionTitle">
+                    <%= image_tag("star.png", class: "sectionTitleImg") %>
+                    <p>Formal Achievements</p>
+                </div>
+                <div class="sectionInfo">
+                    <ul>
+                        <li>
+                            <p class="pointTitle">IEEE published author</p>
+                            <p class="pointInfo">IEEE, 2019 Enviromental and Electrical Engineering International Conference, "Design and Implementation of a Drivetrain for an FSAE Electric Vehicle"</p>
+                        </li>
+                        <li>
+                            <p class="pointTitle">Captained and coached York College's Ultimate Frisbee team</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div id="projects">
+            <!--Section Header-->
+            <div class="sectionHeader">
+                <%= image_tag("settings.png", class: "headerImg") %>
+                <h1>PROJECTS</h1>
+                <hr>
+            </div>
+            <!--Capstone Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <p class="projectTitle">York College Electric Car Capstone</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("Capstone_Car.png", class: "projectImg"), "Capstone_Car.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Capstone_MC.png", class: "projectImg"), "Capstone_MC.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Capstone_TSCB.png", class: "projectImg"), "Capstone_TSCB.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Capstone_Box.png", class: "projectImg"), "Capstone_Box.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <ul>
+                                <li><p>Tractive team member.</p></li>
+                                <li><p>Resposible from motor and motor controller.</p></li>
+                                <li><p>Manipulated and developed software for the functionality of our motor via CAN-BUS.</p></li>
+                                <li><p>Created startup and shutdown procedure for our motor and motor controller that is now used by the motor controller company, Unitek. Can be seen <%= link_to "HERE", 'Startup & Shutdown Procedure.pdf' %>.</p></li>
+                                <li><p>Tested and manipultated control properties, such as overshoot, rise time, and settling time, of our motor.</p></li>
+                                <li><p>Held line of communication with German motor controller company Unitek.</p></li>
+                                <li><p>Aided in development of tractive system control PCB.</p></li>
+                                <li><p>Authored a paper that is to be published by the IEEE. The paper can be seen <%= link_to "HERE", 'IEEE-EEEIC2019-Drivetrain.pdf' %>.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Tableau Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <p class="projectTitle">Tableau Data Analysis for Cummins Allison</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("Tableau_Dash.png", class: "projectImg"), "Tableau_Dash.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Tableau_Web.png", class: "projectImg"), "Tableau_Web.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <ul>
+                                <li><p>Learned how to use Tableau to create visuals for data analysis.</p></li>
+                                <li><p>Created plots to analyze the amounts of notes run per day and machine, the different type of jams, and the sensor measurement data for each note run through a machine.</p></li>
+                                <li><p>The plots were created to update automatically using connections to a SQL server and a Tableau Server.</p></li>
+                                <li><p>The dashboards were added to a web server in order to be accessed by anyone on the company network by writing HTML, CSS, and javascript with Tableau's API.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Amp Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td>
+                            <p class="projectTitle">Audio Amp Circuit for Cummins Allison</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("AudioAmp_PCB.png", class: "projectImg"), "AudioAmp_PCB.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><p>Learned how to utilize Altium to design PCBs and Schematics.</p></li>
+                                <li><p>Spec'd parts to meet the requirements to interface with the machine's main board.</p></li>
+                                <li><p>Designed the schematic and PCB for the circuit prior to having it ordered.</p></li>
+                                <li><p>Manufactured the first iterations of the board to test the circuit.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Mag Testing Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <p class="projectTitle">Magnetic Sensor Testing for Cummins Allison</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("MagTesting_Noise.png", class: "projectImg"), "MagTesting_Noise.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("MagTesting_TestNote.png", class: "projectImg"), "MagTesting_TestNote.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("MagTesting_Shafts.png", class: "projectImg"), "MagTesting_Shafts.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li><p>Created MATLAB scripts to automatically analyze .csv files output from a test machine.</p></li>
+                                <li><p>The purpose was to test how effective Mitsubishi's Magnectic sensor would be for detecting the magnetic properties of currency.</p></li>
+                                <li><p>Was able to analyze noise from various sensors and the noise contributed from extraneous moving magnetic parts.</p></li>
+                                <li><p>One of the many scripts can be seen <%= link_to "HERE", 'nitroTest.pdf' %>.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Counterfeit Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <p class="projectTitle">Counterfeit Note Detection Software</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("W&O_Deskew.png", class: "projectImg"), "W&O_Deskew.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("W&O_Compare.png", class: "projectImg"), "W&O_Compare.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("W&O_Table.png", class: "projectImg"), "W&O_Table.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li><p>Developed protoyped software that could determine if note was counterfeit.</p></li>
+                                <li><p>Software utilized a known genuine note to compare to an unknown note.</p></li>
+                                <li><p>The software compared the infrared images of the two notes and compared the result to a dynamic threshold.</p></li>
+                                <li><p>Software was upwards of 80% efficent.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Glatfelter Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td colspan="4">
+                            <p class="projectTitle">Chemical Flow Control Device for Glatfelter</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("Glatfelter_Device.png", class: "projectImg"), "Glatfelter_Device.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Glatfelter_Drawing.png", class: "projectImg"), "Glatfelter_Drawing.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Glatfelter_Cabinet.png", class: "projectImg"), "Glatfelter_Cabinet.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Glatfelter_IO.png", class: "projectImg"), "Glatfelter_IO.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <ul>
+                                <li><p>Responsible for correcting an unknown issue with a device that transports a specific amount of chemicals to a desired location.</p></li>
+                                <li><p>In order to accomplish the task full understanding of the device had to be achieved as well as coming up with a unique solution that would allow for the safety of the machine as well as the machine running properly.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--OCXO Project-->
+            <div class="projectSubsection">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <p class="projectTitle">OCXO ASIC for Vectron International</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <%= link_to image_tag("Vectron_PCB.png", class: "projectImg"), "Vectron_PCB.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Vectron_Schematic.png", class: "projectImg"), "Vectron_Schematic.png", class: "projectImgLink" %>
+                        </td>
+                        <td>
+                            <%= link_to image_tag("Vectron_ASIC.png", class: "projectImg"), "Vectron_ASIC.png", class: "projectImgLink" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li><p>Tested an oven controlled crsytal oscillator application specific integrated circuit.</p></li>
+                                <li><p>Gained experience using multiple different types of oscillators.</p></li>
+                                <li><p>Provide changes that would be made to the final design.</p></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Van Project-->
+            <div class="projectSubsection">
+                
+            </div>
+        </div>
+
+        <!--Work-->
+        <div id="work">
+            <!--Section Header-->
+            <div class="sectionHeader">
+                <%= image_tag("edit.png", class: "headerImg") %>
+                <h1>WORK</h1>
+                <hr>
+            </div>
+            <!--Cummins Allison-->
+            <div class="workSubsection">
+                <table>
+                    <tr>
+                        <td>
+                            <%= image_tag("CumminsLogo.png", class: "workImg") %>
+                        </td>
+                        <td>
+                            <p><b>Company:</b> Cummins Allison</p>
+                            <p><b>Location:</b> Bensalem, PA</p>
+                            <p><b>Position:</b> Engineering Intern</p>
+                            <p><b>Date:</b> 2018-2019</p>
+                            <p>My responsibilities included furthering the development of a new currency machine, performing data analysis on machines to allow for engineers to make educated decisions, and assembling portions of prototype machines.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Glatfelter-->
+            <div class="workSubsection">
+                <table>
+                    <tr>
+                        <td>
+                            <%= image_tag("GlatfelterLogo.png", class: "workImg") %>
+                        </td>
+                        <td>
+                            <p><b>Company:</b> Glatfelter</p>
+                            <p><b>Location:</b> Spring Grove, PA</p>
+                            <p><b>Position:</b> Engineering Intern</p>
+                            <p><b>Date:</b> 2017</p>
+                            <p>I was responsible for assisting project managers throughouit every stage of development on a project and responding to technicians' calls of broken equipment.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Vectron-->
+            <div class="workSubsection">
+                <table>
+                    <tr>
+                        <td>
+                            <%= image_tag("VectronLogo.png", class: "workImg") %>
+                        </td>
+                        <td>
+                            <p><b>Comapny:</b> Vectron International</p>
+                            <p><b>Location:</b> Mount Holly Springs, PA</p>
+                            <p><b>Position:</b> Electrical Engineering Intern</p>
+                            <p><b>Date:</b> 2016</p>
+                            <p>My responsibilities included aiding in the testing, correcting, and development of a new OCXO and enhancing and developing real world engineering skills.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Mainland-->
+            <div class="workSubsection">
+                <table>
+                    <tr>
+                        <td>
+                            <%= image_tag("MainlandLogo.png", class: "workImg") %>
+                        </td>
+                        <td>
+                            <p><b>Company:</b> Mainland Golf Course</p>
+                            <p><b>Location:</b> Harleysville, PA</p>
+                            <p><b>Position:</b> Pro Shop Assistant</p>
+                            <p><b>Date:</b> 2015</p>
+                            <p>I efficently operated the shop and was responsible for closing and securing the course. I provided excellent customer service while scheduling tee time requests and handling conflicts.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--Footer-->
+        <div id="footer">
+            <p></p>
+        </div>
+        <!--<div id="footer">
+            <div id="footerTitle">
+                <p>Contact Me</p>
+            </div>
+            <div class="footerInfo">
+                <%= image_tag("envelope.png", class: "footerImg") %>
+                <p><b>Email</b></p>
+                <p>joemaier2@gmail.com</p>
+            </div>
+            <div class="footerInfo">
+                <%= image_tag("telephone.png", class: "footerImg") %>
+                <p><b>Phone</b></p>
+                <p>(267) 421-8499</p>
+            </div>
+        </div>-->
+    </body>
+</html>
